@@ -1,0 +1,28 @@
+colorize_node:
+  ros__parameters:
+    calib_path: /home/jay/catkin_depth/src/livox_preprocessed/calib.json
+    output_topic: /livox/color_points
+    lidar_frame_id: livox_frame
+    camera_frame_id: camera
+    use_inverse_transform: true
+    keep_uncolored: true
+    max_points: 0
+    max_image_age_sec: 0.0
+    min_depth_m: 0.05
+    output_in_camera_frame: false
+
+demo_publisher:
+  ros__parameters:
+    calib_path: /home/jay/catkin_depth/src/livox_preprocessed/calib.json
+    data_dir: /home/jay/catkin_depth/src/livox_preprocessed
+    sample_name: rosbag2_2023_03_09-13_42_46
+    frame_id: livox_frame
+    publish_rate_hz: 2.0
+    point_limit: 0
+
+calib_tf_publisher:
+  ros__parameters:
+    calib_path: /home/jay/catkin_depth/src/livox_preprocessed/calib.json
+    lidar_frame_id: livox_frame
+    camera_frame_id: camera
+    use_inverse_transform: true
